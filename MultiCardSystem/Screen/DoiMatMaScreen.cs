@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MultiCardSystem
+namespace MultiCardSystem.Screen
 {
-    public partial class Form1 : Form
+    public partial class DoiMatMaScreen : Form
     {
-        public Form1()
+        public DoiMatMaScreen()
         {
             InitializeComponent();
+        }
+
+        private void btnQuayLai_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

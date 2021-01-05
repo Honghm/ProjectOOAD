@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using MultiCardSystem.Screen;
 namespace MultiCardSystem
 {
     static class Program
@@ -16,7 +16,7 @@ namespace MultiCardSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new LoginScreen());
         }
     }
 }

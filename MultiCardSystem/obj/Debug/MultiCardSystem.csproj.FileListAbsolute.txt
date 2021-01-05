@@ -104,3 +104,10 @@ D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\System.Numerics.Vectors.dl
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\System.Threading.Tasks.Extensions.dll
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.csproj.CopyComplete
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.LoginScreen.resources
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.TrangChuScreen.resources
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.RutTienScreen.resources
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.ChuyenTienScreen.resources
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.ThanhToanHoaDonScreen.resources
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.DoiMatMaScreen.resources
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.ThanhToanHoaDon2.resources

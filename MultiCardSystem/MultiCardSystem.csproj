@@ -64,12 +64,6 @@
     <Compile Include="Data\Entities\Supplier.cs" />
     <Compile Include="Enum\RoleName.cs" />
     <Compile Include="Enum\Status.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\202011162026588_testdb.cs" />
     <Compile Include="Migrations\202011162026588_testdb.designer.cs">
       <DependentUpon>202011162026588_testdb.cs</DependentUpon>
@@ -97,6 +91,48 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screen\ChuyenTienScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\ChuyenTienScreen.Designer.cs">
+      <DependentUpon>ChuyenTienScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\DoiMatMaScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\DoiMatMaScreen.Designer.cs">
+      <DependentUpon>DoiMatMaScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\LoginScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\LoginScreen.Designer.cs">
+      <DependentUpon>LoginScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\RutTienScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\RutTienScreen.Designer.cs">
+      <DependentUpon>RutTienScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\ThanhToanHoaDon2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\ThanhToanHoaDon2.Designer.cs">
+      <DependentUpon>ThanhToanHoaDon2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\ThanhToanHoaDonScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\ThanhToanHoaDonScreen.Designer.cs">
+      <DependentUpon>ThanhToanHoaDonScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\TrangChuScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\TrangChuScreen.Designer.cs">
+      <DependentUpon>TrangChuScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Services\AccountService.cs" />
     <EmbeddedResource Include="Migrations\202011162026588_testdb.resx">
       <DependentUpon>202011162026588_testdb.cs</DependentUpon>
@@ -124,7 +160,29 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Screen\ChuyenTienScreen.resx">
+      <DependentUpon>ChuyenTienScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screen\DoiMatMaScreen.resx">
+      <DependentUpon>DoiMatMaScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screen\LoginScreen.resx">
+      <DependentUpon>LoginScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screen\RutTienScreen.resx">
+      <DependentUpon>RutTienScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screen\ThanhToanHoaDon2.resx">
+      <DependentUpon>ThanhToanHoaDon2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screen\ThanhToanHoaDonScreen.resx">
+      <DependentUpon>ThanhToanHoaDonScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screen\TrangChuScreen.resx">
+      <DependentUpon>TrangChuScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -145,6 +203,72 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore">
       <Version>3.1.1</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nganHang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnChuyenTien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnThanhToanHoaDon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnThoat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnTraCuuThongTin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnRutTien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnDoiMatMa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnQuayLai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnTiepTuc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnXacNhan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSoKhac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn5Tr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn500.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn2Tr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn3tr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn1Tr.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
