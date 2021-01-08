@@ -24,7 +24,11 @@ namespace MultiCardSystem.Screen
 
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Chuyển tiền thành công!", "Thông báo", MessageBoxButtons.OK);
+            //MessageBox.Show("Chuyển tiền thành công!", "Thông báo", MessageBoxButtons.OK);
+            this.Hide();
+            XacNhanMaPIN xacNhan = new XacNhanMaPIN();
+            xacNhan.ShowDialog();
+            this.Show();
         }
 
         private void ChuyenTien_Load(object sender, EventArgs e)

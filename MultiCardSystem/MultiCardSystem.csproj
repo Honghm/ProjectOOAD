@@ -109,11 +109,23 @@
     <Compile Include="Screen\LoginScreen.Designer.cs">
       <DependentUpon>LoginScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screen\QuanLyScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\QuanLyScreen.Designer.cs">
+      <DependentUpon>QuanLyScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screen\RutTienScreen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Screen\RutTienScreen.Designer.cs">
       <DependentUpon>RutTienScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\RutTienSoKhac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\RutTienSoKhac.Designer.cs">
+      <DependentUpon>RutTienSoKhac.cs</DependentUpon>
     </Compile>
     <Compile Include="Screen\ThanhToanHoaDon2.cs">
       <SubType>Form</SubType>
@@ -132,6 +144,12 @@
     </Compile>
     <Compile Include="Screen\TrangChuScreen.Designer.cs">
       <DependentUpon>TrangChuScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\XacNhanMaPIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\XacNhanMaPIN.Designer.cs">
+      <DependentUpon>XacNhanMaPIN.cs</DependentUpon>
     </Compile>
     <Compile Include="Services\AccountService.cs" />
     <EmbeddedResource Include="Migrations\202011162026588_testdb.resx">
@@ -171,8 +189,14 @@
     <EmbeddedResource Include="Screen\LoginScreen.resx">
       <DependentUpon>LoginScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Screen\QuanLyScreen.resx">
+      <DependentUpon>QuanLyScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screen\RutTienScreen.resx">
       <DependentUpon>RutTienScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screen\RutTienSoKhac.resx">
+      <DependentUpon>RutTienSoKhac.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screen\ThanhToanHoaDon2.resx">
       <DependentUpon>ThanhToanHoaDon2.cs</DependentUpon>
@@ -182,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Screen\TrangChuScreen.resx">
       <DependentUpon>TrangChuScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screen\XacNhanMaPIN.resx">
+      <DependentUpon>XacNhanMaPIN.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

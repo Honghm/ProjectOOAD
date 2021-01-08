@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MultiCardSystem.Screen
 {
-    public partial class ThanhToanHoaDon2 : Form
+    public partial class RutTienSoKhac : Form
     {
-        public ThanhToanHoaDon2()
+        public RutTienSoKhac()
         {
             InitializeComponent();
         }
@@ -24,14 +24,10 @@ namespace MultiCardSystem.Screen
 
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
-            //if (MessageBox.Show("Hóa đơn thanh toán thành công!", "Thông báo", MessageBoxButtons.OK) == System.Windows.Forms.DialogResult.OK)
-            //{
-            //    this.Close();
-            //}
             this.Hide();
             XacNhanMaPIN xacNhan = new XacNhanMaPIN();
             xacNhan.ShowDialog();
-            this.Show(); 
+            this.Show();
         }
     }
 }

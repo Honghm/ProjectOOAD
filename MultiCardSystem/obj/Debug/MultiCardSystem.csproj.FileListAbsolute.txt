@@ -111,3 +111,6 @@ D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.Chu
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.ThanhToanHoaDonScreen.resources
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.DoiMatMaScreen.resources
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.ThanhToanHoaDon2.resources
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.RutTienSoKhac.resources
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.XacNhanMaPIN.resources
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.QuanLyScreen.resources
