@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrangChuScreen));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.picChuyenTien = new System.Windows.Forms.PictureBox();
@@ -116,13 +117,14 @@
             // btnTraCuu
             // 
             this.btnTraCuu.BackColor = System.Drawing.Color.Transparent;
-            this.btnTraCuu.BackgroundImage = global::MultiCardSystem.Properties.Resources.btnTraCuuThongTin;
+            this.btnTraCuu.BackgroundImage = global::MultiCardSystem.Properties.Resources.btnKiemTraSoDu;
             this.btnTraCuu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnTraCuu.Location = new System.Drawing.Point(12, 174);
             this.btnTraCuu.Name = "btnTraCuu";
             this.btnTraCuu.Size = new System.Drawing.Size(249, 52);
             this.btnTraCuu.TabIndex = 5;
             this.btnTraCuu.TabStop = false;
+            this.btnTraCuu.Click += new System.EventHandler(this.btnTraCuu_Click);
             // 
             // btnRutTien
             // 
@@ -152,6 +154,7 @@
             this.Controls.Add(this.picChuyenTien);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TrangChuScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Trang chủ";

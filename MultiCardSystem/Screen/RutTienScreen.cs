@@ -25,7 +25,7 @@ namespace MultiCardSystem.Screen
         private void btnRut200_Click(object sender, EventArgs e)
         {
             this.Hide();
-            XacNhanMaPIN xacNhan = new XacNhanMaPIN();
+            XacNhanMaPIN xacNhan = new XacNhanMaPIN("200.000");
             xacNhan.ShowDialog();
             this.Show();
         }
@@ -33,7 +33,7 @@ namespace MultiCardSystem.Screen
         private void btnRut500_Click(object sender, EventArgs e)
         {
             this.Hide();
-            XacNhanMaPIN xacNhan = new XacNhanMaPIN();
+            XacNhanMaPIN xacNhan = new XacNhanMaPIN("500.000");
             xacNhan.ShowDialog();
             this.Show();
         }
@@ -41,7 +41,7 @@ namespace MultiCardSystem.Screen
         private void btnRut1tr_Click(object sender, EventArgs e)
         {
             this.Hide();
-            XacNhanMaPIN xacNhan = new XacNhanMaPIN();
+            XacNhanMaPIN xacNhan = new XacNhanMaPIN("1.000.000");
             xacNhan.ShowDialog();
             this.Show();
         }
@@ -49,7 +49,7 @@ namespace MultiCardSystem.Screen
         private void btnRut2tr_Click(object sender, EventArgs e)
         {
             this.Hide();
-            XacNhanMaPIN xacNhan = new XacNhanMaPIN();
+            XacNhanMaPIN xacNhan = new XacNhanMaPIN("2.000.000");
             xacNhan.ShowDialog();
             this.Show();
         }
@@ -57,7 +57,7 @@ namespace MultiCardSystem.Screen
         private void btnRut3tr_Click(object sender, EventArgs e)
         {
             this.Hide();
-            XacNhanMaPIN xacNhan = new XacNhanMaPIN();
+            XacNhanMaPIN xacNhan = new XacNhanMaPIN("3.000.000");
             xacNhan.ShowDialog();
             this.Show();
         }
@@ -65,7 +65,7 @@ namespace MultiCardSystem.Screen
         private void btnRut5tr_Click(object sender, EventArgs e)
         {
             this.Hide();
-            XacNhanMaPIN xacNhan = new XacNhanMaPIN();
+            XacNhanMaPIN xacNhan = new XacNhanMaPIN("5.000.000");
             xacNhan.ShowDialog();
             this.Show();
         }

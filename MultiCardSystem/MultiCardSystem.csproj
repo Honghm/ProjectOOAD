@@ -139,6 +139,12 @@
     <Compile Include="Screen\ThanhToanHoaDonScreen.Designer.cs">
       <DependentUpon>ThanhToanHoaDonScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screen\TraCuuSoDu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\TraCuuSoDu.Designer.cs">
+      <DependentUpon>TraCuuSoDu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screen\TrangChuScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Screen\ThanhToanHoaDonScreen.resx">
       <DependentUpon>ThanhToanHoaDonScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screen\TraCuuSoDu.resx">
+      <DependentUpon>TraCuuSoDu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screen\TrangChuScreen.resx">
       <DependentUpon>TrangChuScreen.cs</DependentUpon>
@@ -296,6 +305,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btn1Tr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnKiemTraSoDu.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

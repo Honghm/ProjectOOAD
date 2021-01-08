@@ -16,7 +16,7 @@ namespace MultiCardSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QuanLyScreen());
+            Application.Run(new LoginScreen());
         }
     }
 }

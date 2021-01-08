@@ -25,7 +25,7 @@ namespace MultiCardSystem.Screen
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
             this.Hide();
-            XacNhanMaPIN xacNhan = new XacNhanMaPIN();
+            XacNhanMaPIN xacNhan = new XacNhanMaPIN(this.txbSoTien.Text);
             xacNhan.ShowDialog();
             this.Show();
         }

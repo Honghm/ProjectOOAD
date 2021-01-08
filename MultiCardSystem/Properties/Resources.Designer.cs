@@ -183,6 +183,16 @@ namespace MultiCardSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnKiemTraSoDu {
+            get {
+                object obj = ResourceManager.GetObject("btnKiemTraSoDu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnQuayLai {
             get {
                 object obj = ResourceManager.GetObject("btnQuayLai", resourceCulture);

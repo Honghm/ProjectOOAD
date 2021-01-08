@@ -12,12 +12,43 @@ namespace MultiCardSystem.Screen
 {
     public partial class QuanLyScreen : Form
     {
+        int tabSelected = 1;
         public QuanLyScreen()
         {
             InitializeComponent();
         }
 
         private void QuanLyScreen_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void tcQuanLy_Selected(object sender, TabControlEventArgs e)
+        {
+           
+           if(e.TabPage.Name == "btnThoat")
+            {
+                if (MessageBox.Show("Bạn muốn đăng xuất?", "Thông báo", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+                {
+                    this.Close();
+                }
+                else
+                {
+                    this.tcQuanLy.SelectedIndex = tabSelected;
+                }
+            }
+            else
+            {
+                tabSelected = e.TabPageIndex;
+            }
+        }
+
+        private void tcQuanLy_Selecting(object sender, TabControlCancelEventArgs e)
         {
 
         }

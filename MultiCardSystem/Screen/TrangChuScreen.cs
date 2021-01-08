@@ -29,6 +29,7 @@ namespace MultiCardSystem.Screen
             {
                 e.Cancel = true;
             }
+            
         }
 
         private void btnChuyenTien_Click(object sender, EventArgs e)
@@ -71,6 +72,14 @@ namespace MultiCardSystem.Screen
             this.Hide();
             DoiMatMaScreen doiMatMa = new DoiMatMaScreen();
             doiMatMa.ShowDialog();
+            this.Show();
+        }
+
+        private void btnTraCuu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TraCuuSoDu traCuu = new TraCuuSoDu();
+            traCuu.ShowDialog();
             this.Show();
         }
     }

@@ -35,8 +35,18 @@ namespace MultiCardSystem.Screen
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             this.Hide();
-            TrangChuScreen trangChu = new TrangChuScreen();
-            trangChu.ShowDialog();
+            if (this.txbSoTaiKhoan.Text == "1")
+            {
+                TrangChuScreen trangChu = new TrangChuScreen();
+                trangChu.ShowDialog();
+            }
+            else
+            {
+                QuanLyScreen quanLy = new QuanLyScreen();
+                quanLy.ShowDialog();
+            }
+            
+            
             this.Show();
         }
 
