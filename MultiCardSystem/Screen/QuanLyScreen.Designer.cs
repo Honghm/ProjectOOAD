@@ -36,7 +36,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnXoaTaiKhoan = new System.Windows.Forms.Button();
-            this.btnSuaTaiKhoan = new System.Windows.Forms.Button();
             this.btnThemTaiKhoan = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -56,11 +55,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnXoaThe = new System.Windows.Forms.Button();
-            this.btnSuaThe = new System.Windows.Forms.Button();
             this.btnThemThe = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.btnThoat = new System.Windows.Forms.TabPage();
+            this.btnSuaTaiKhoan = new System.Windows.Forms.Button();
             this.tcQuanLy.SuspendLayout();
             this.qlTaiKhoan.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -154,18 +153,6 @@
             this.btnXoaTaiKhoan.Text = "Xóa";
             this.btnXoaTaiKhoan.UseVisualStyleBackColor = false;
             // 
-            // btnSuaTaiKhoan
-            // 
-            this.btnSuaTaiKhoan.BackColor = System.Drawing.Color.DimGray;
-            this.btnSuaTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSuaTaiKhoan.ForeColor = System.Drawing.Color.White;
-            this.btnSuaTaiKhoan.Location = new System.Drawing.Point(299, 22);
-            this.btnSuaTaiKhoan.Name = "btnSuaTaiKhoan";
-            this.btnSuaTaiKhoan.Size = new System.Drawing.Size(139, 37);
-            this.btnSuaTaiKhoan.TabIndex = 6;
-            this.btnSuaTaiKhoan.Text = "Sửa";
-            this.btnSuaTaiKhoan.UseVisualStyleBackColor = false;
-            // 
             // btnThemTaiKhoan
             // 
             this.btnThemTaiKhoan.BackColor = System.Drawing.Color.Blue;
@@ -177,6 +164,7 @@
             this.btnThemTaiKhoan.TabIndex = 5;
             this.btnThemTaiKhoan.Text = "Thêm";
             this.btnThemTaiKhoan.UseVisualStyleBackColor = false;
+            this.btnThemTaiKhoan.Click += new System.EventHandler(this.btnThemTaiKhoan_Click);
             // 
             // label4
             // 
@@ -272,6 +260,7 @@
             this.btnSuaKhachHang.TabIndex = 6;
             this.btnSuaKhachHang.Text = "Sửa";
             this.btnSuaKhachHang.UseVisualStyleBackColor = false;
+            this.btnSuaKhachHang.Click += new System.EventHandler(this.btnSuaKhachHang_Click);
             // 
             // btnThemKhachHang
             // 
@@ -284,6 +273,7 @@
             this.btnThemKhachHang.TabIndex = 5;
             this.btnThemKhachHang.Text = "Thêm";
             this.btnThemKhachHang.UseVisualStyleBackColor = false;
+            this.btnThemKhachHang.Click += new System.EventHandler(this.btnThemKhachHang_Click);
             // 
             // label1
             // 
@@ -349,7 +339,6 @@
             // panel6
             // 
             this.panel6.Controls.Add(this.btnXoaThe);
-            this.panel6.Controls.Add(this.btnSuaThe);
             this.panel6.Controls.Add(this.btnThemThe);
             this.panel6.Location = new System.Drawing.Point(61, 345);
             this.panel6.Name = "panel6";
@@ -368,18 +357,6 @@
             this.btnXoaThe.Text = "Xóa";
             this.btnXoaThe.UseVisualStyleBackColor = false;
             // 
-            // btnSuaThe
-            // 
-            this.btnSuaThe.BackColor = System.Drawing.Color.DimGray;
-            this.btnSuaThe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSuaThe.ForeColor = System.Drawing.Color.White;
-            this.btnSuaThe.Location = new System.Drawing.Point(299, 22);
-            this.btnSuaThe.Name = "btnSuaThe";
-            this.btnSuaThe.Size = new System.Drawing.Size(139, 37);
-            this.btnSuaThe.TabIndex = 6;
-            this.btnSuaThe.Text = "Sửa";
-            this.btnSuaThe.UseVisualStyleBackColor = false;
-            // 
             // btnThemThe
             // 
             this.btnThemThe.BackColor = System.Drawing.Color.Blue;
@@ -391,6 +368,7 @@
             this.btnThemThe.TabIndex = 5;
             this.btnThemThe.Text = "Thêm";
             this.btnThemThe.UseVisualStyleBackColor = false;
+            this.btnThemThe.Click += new System.EventHandler(this.btnThemThe_Click);
             // 
             // label6
             // 
@@ -421,6 +399,19 @@
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
+            // btnSuaTaiKhoan
+            // 
+            this.btnSuaTaiKhoan.BackColor = System.Drawing.Color.DimGray;
+            this.btnSuaTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuaTaiKhoan.ForeColor = System.Drawing.Color.White;
+            this.btnSuaTaiKhoan.Location = new System.Drawing.Point(299, 22);
+            this.btnSuaTaiKhoan.Name = "btnSuaTaiKhoan";
+            this.btnSuaTaiKhoan.Size = new System.Drawing.Size(139, 37);
+            this.btnSuaTaiKhoan.TabIndex = 6;
+            this.btnSuaTaiKhoan.Text = "Sửa";
+            this.btnSuaTaiKhoan.UseVisualStyleBackColor = false;
+            this.btnSuaTaiKhoan.Click += new System.EventHandler(this.btnSuaTaiKhoan_Click);
             // 
             // QuanLyScreen
             // 
@@ -476,7 +467,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnXoaTaiKhoan;
-        private System.Windows.Forms.Button btnSuaTaiKhoan;
         private System.Windows.Forms.Button btnThemTaiKhoan;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dataGridView2;
@@ -486,11 +476,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button btnXoaThe;
-        private System.Windows.Forms.Button btnSuaThe;
         private System.Windows.Forms.Button btnThemThe;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.TabPage qlKhachHang;
         private System.Windows.Forms.TabPage btnThoat;
+        private System.Windows.Forms.Button btnSuaTaiKhoan;
     }
 }

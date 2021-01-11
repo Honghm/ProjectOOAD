@@ -66,9 +66,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(258, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(355, 46);
+            this.label1.Size = new System.Drawing.Size(337, 46);
             this.label1.TabIndex = 0;
-            this.label1.Text = "ĐỔI MẬT MÃ MỚI";
+            this.label1.Text = "ĐỔI MÃ PIN MỚI";
             // 
             // panel3
             // 
@@ -87,9 +87,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(35, 7);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(177, 58);
+            this.label3.Size = new System.Drawing.Size(175, 58);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Nhập mật mã\r\n     hiện tại:\r\n";
+            this.label3.Text = "Nhập mã PIN\r\n     hiện tại:\r\n";
             // 
             // txbMkHienTai
             // 
@@ -116,9 +116,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(35, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(238, 29);
+            this.label2.Size = new System.Drawing.Size(236, 29);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Nhập mật mã mới:\r\n";
+            this.label2.Text = "Nhập mã PIN mới:\r\n";
             // 
             // txbMkMoi
             // 
@@ -145,9 +145,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(35, 21);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(214, 29);
+            this.label4.Size = new System.Drawing.Size(220, 29);
             this.label4.TabIndex = 1;
-            this.label4.Text = "Nhập lại mật mã";
+            this.label4.Text = "Nhập lại mã PIN:";
             // 
             // txbNhapLaiMk
             // 

@@ -18,10 +18,7 @@ namespace MultiCardSystem.Screen
             InitializeComponent();
         }
 
-        private void QuanLyScreen_Load(object sender, EventArgs e)
-        {
-
-        }
+ 
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
@@ -51,6 +48,46 @@ namespace MultiCardSystem.Screen
         private void tcQuanLy_Selecting(object sender, TabControlCancelEventArgs e)
         {
 
+        }
+
+        private void btnThemTaiKhoan_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ThemTaiKhoan them = new ThemTaiKhoan();
+            them.ShowDialog();
+            this.Show();
+        }
+
+        private void btnSuaTaiKhoan_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SuaTaiKhoan sua = new SuaTaiKhoan();
+            sua.ShowDialog();
+            this.Show();
+        }
+
+        private void btnThemKhachHang_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ThemKhachHang them = new ThemKhachHang();
+            them.ShowDialog();
+            this.Show();
+        }
+
+        private void btnSuaKhachHang_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SuaKhachHang them = new SuaKhachHang();
+            them.ShowDialog();
+            this.Show();
+        }
+
+        private void btnThemThe_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ThemThe them = new ThemThe();
+            them.ShowDialog();
+            this.Show();
         }
     }
 }

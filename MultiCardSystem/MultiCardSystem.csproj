@@ -127,6 +127,18 @@
     <Compile Include="Screen\RutTienSoKhac.Designer.cs">
       <DependentUpon>RutTienSoKhac.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screen\SuaKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\SuaKhachHang.Designer.cs">
+      <DependentUpon>SuaKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\SuaTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\SuaTaiKhoan.Designer.cs">
+      <DependentUpon>SuaTaiKhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screen\ThanhToanHoaDon2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +150,24 @@
     </Compile>
     <Compile Include="Screen\ThanhToanHoaDonScreen.Designer.cs">
       <DependentUpon>ThanhToanHoaDonScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\ThemKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\ThemKhachHang.Designer.cs">
+      <DependentUpon>ThemKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\ThemTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\ThemTaiKhoan.Designer.cs">
+      <DependentUpon>ThemTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\ThemThe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\ThemThe.Designer.cs">
+      <DependentUpon>ThemThe.cs</DependentUpon>
     </Compile>
     <Compile Include="Screen\TraCuuSoDu.cs">
       <SubType>Form</SubType>
@@ -204,11 +234,26 @@
     <EmbeddedResource Include="Screen\RutTienSoKhac.resx">
       <DependentUpon>RutTienSoKhac.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Screen\SuaKhachHang.resx">
+      <DependentUpon>SuaKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screen\SuaTaiKhoan.resx">
+      <DependentUpon>SuaTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screen\ThanhToanHoaDon2.resx">
       <DependentUpon>ThanhToanHoaDon2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screen\ThanhToanHoaDonScreen.resx">
       <DependentUpon>ThanhToanHoaDonScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screen\ThemKhachHang.resx">
+      <DependentUpon>ThemKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screen\ThemTaiKhoan.resx">
+      <DependentUpon>ThemTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screen\ThemThe.resx">
+      <DependentUpon>ThemThe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screen\TraCuuSoDu.resx">
       <DependentUpon>TraCuuSoDu.cs</DependentUpon>
