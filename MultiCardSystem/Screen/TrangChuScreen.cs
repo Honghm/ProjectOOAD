@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MultiCardSystem.Data.Entities;
+using MultiCardSystem.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,12 +14,16 @@ namespace MultiCardSystem.Screen
 {
     public partial class TrangChuScreen : Form
     {
-        public TrangChuScreen()
+        string ID;
+        public TrangChuScreen(string id)
         {
-          
+            this.ID = id;
             InitializeComponent();
         }
 
+        private readonly AccountService _accountService = new AccountService();
+        private readonly CustomerService _customerService = new CustomerService();
+        private readonly CardService _cardService = new CardService();
         private void TrangChuScreen_FormClosed(object sender, FormClosedEventArgs e)
         {
           
@@ -35,7 +41,7 @@ namespace MultiCardSystem.Screen
         private void btnChuyenTien_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ChuyenTienScreen chuyenTien = new ChuyenTienScreen();
+            ChuyenTienScreen chuyenTien = new ChuyenTienScreen(this.ID);
             chuyenTien.ShowDialog();
             this.Show();
             
@@ -54,7 +60,7 @@ namespace MultiCardSystem.Screen
         private void btnRutTien_Click(object sender, EventArgs e)
         {
             this.Hide();
-            RutTienScreen rutTien = new RutTienScreen();
+            RutTienScreen rutTien = new RutTienScreen(this.ID);
             rutTien.ShowDialog();
             this.Show();
         }
@@ -62,7 +68,7 @@ namespace MultiCardSystem.Screen
         private void btnThanhToanHoaDon_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ThanhToanHoaDonScreen thanhToanHoaDon = new ThanhToanHoaDonScreen();
+            ThanhToanHoaDonScreen thanhToanHoaDon = new ThanhToanHoaDonScreen(ID);
             thanhToanHoaDon.ShowDialog();
             this.Show();
         }
@@ -70,15 +76,19 @@ namespace MultiCardSystem.Screen
         private void btnDoiMatMa_Click(object sender, EventArgs e)
         {
             this.Hide();
-            DoiMatMaScreen doiMatMa = new DoiMatMaScreen();
+            DoiMatMaScreen doiMatMa = new DoiMatMaScreen(this.ID);
             doiMatMa.ShowDialog();
             this.Show();
         }
 
-        private void btnTraCuu_Click(object sender, EventArgs e)
+        private async void btnTraCuu_Click(object sender, EventArgs e)
         {
+           
+            Account account = await _accountService.GetAccountByID(ID);
+            Customer customer = await _customerService.GetCustomerById(ID);
+            Card card = await _cardService.GetCardById(ID);
             this.Hide();
-            TraCuuSoDu traCuu = new TraCuuSoDu();
+            TraCuuSoDu traCuu = new TraCuuSoDu(customer.FirstName+" "+ customer.LastName,account.IDAccount,card.IDCard,account.Money.ToString());
             traCuu.ShowDialog();
             this.Show();
         }

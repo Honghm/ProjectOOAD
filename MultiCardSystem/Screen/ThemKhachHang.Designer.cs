@@ -41,7 +41,6 @@
             this.txbTen = new System.Windows.Forms.TextBox();
             this.txbCMND = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txbNgaySinh = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -54,6 +53,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.txbID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.dtpDob = new System.Windows.Forms.DateTimePicker();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -180,14 +180,6 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "CMND:";
             // 
-            // txbNgaySinh
-            // 
-            this.txbNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbNgaySinh.Location = new System.Drawing.Point(147, 14);
-            this.txbNgaySinh.Name = "txbNgaySinh";
-            this.txbNgaySinh.Size = new System.Drawing.Size(222, 26);
-            this.txbNgaySinh.TabIndex = 1;
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Transparent;
@@ -211,7 +203,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Transparent;
-            this.panel5.Controls.Add(this.txbNgaySinh);
+            this.panel5.Controls.Add(this.dtpDob);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Location = new System.Drawing.Point(37, 244);
             this.panel5.Name = "panel5";
@@ -286,13 +278,13 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(329, 98);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(207, 52);
+            this.panel2.Size = new System.Drawing.Size(243, 52);
             this.panel2.TabIndex = 23;
             // 
             // txbID
             // 
             this.txbID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbID.Location = new System.Drawing.Point(142, 14);
+            this.txbID.Location = new System.Drawing.Point(169, 14);
             this.txbID.Name = "txbID";
             this.txbID.Size = new System.Drawing.Size(56, 26);
             this.txbID.TabIndex = 1;
@@ -306,6 +298,15 @@
             this.label2.Size = new System.Drawing.Size(124, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "ID Khách hàng:";
+            // 
+            // dtpDob
+            // 
+            this.dtpDob.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpDob.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDob.Location = new System.Drawing.Point(148, 16);
+            this.dtpDob.Name = "dtpDob";
+            this.dtpDob.Size = new System.Drawing.Size(221, 26);
+            this.dtpDob.TabIndex = 1;
             // 
             // ThemKhachHang
             // 
@@ -363,7 +364,6 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.TextBox txbCMND;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txbNgaySinh;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel5;
@@ -377,5 +377,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txbID;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dtpDob;
     }
 }

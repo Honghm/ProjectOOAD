@@ -35,37 +35,46 @@ namespace MultiCardSystem.Screen
             var random = new Random();
             for (int i = 0; i < stringChars.Length; i++)
             {
-                stringChars[i] = chars[random.Next(chars.Length)];
+                stringChars[i] = chars[random.Next(9)];
             }
 
             var finalString = new string(stringChars);
-            //string roleName;
-            //string status;
+          
             RoleName roleName = Enum.RoleName.User;
             Status status = Enum.Status.InActive;
             if(txbID.Text == "")
             {
-                MessageBox.Show("aaa");
+                MessageBox.Show("Bạn phải nhập ID tài khoản", "CẢNH BÁO");
                 txbID.Focus();
+                return;
             }
             else if(txbTenTaiKhoan.Text == "")
             {
+                MessageBox.Show("Bạn phải nhập tên tài khoản", "CẢNH BÁO");
                 txbTenTaiKhoan.Focus();
+                return;
             }
             else if (txbMatKhau.Text == "")
             {
+                MessageBox.Show("Bạn phải nhập mật khẩu", "CẢNH BÁO");
                 txbMatKhau.Focus();
+                return;
             }
             else if (txbNhapLaiMatKhau.Text == "" )
             {
+                MessageBox.Show("Bạn phải nhập lại mật khẩu", "CẢNH BÁO");
                 txbNhapLaiMatKhau.Focus();
+                return;
             }
             else if (txbNhapLaiMatKhau.Text!= txbMatKhau.Text)
             {
-                MessageBox.Show("");
+                MessageBox.Show("Nhập lại mật khẩu không đúng","CẢNH BÁO");
+                txbNhapLaiMatKhau.Focus();
+                return;
             }
             else if (txbSoDu.Text == "")
             {
+                MessageBox.Show("Bạn phải nhập số tiền ban đầu", "CẢNH BÁO");
                 txbSoDu.Focus();
             }
             else if(cbLoaiTaiKhoan.SelectedIndex == 0)
@@ -97,11 +106,11 @@ namespace MultiCardSystem.Screen
             bool result = await _accountService.Insert(account);
             if (result)
             {
-                MessageBox.Show("Thanh cong");
+                MessageBox.Show("Đã thêm 1 tài khoản", "THÔNG BÁO");
             }
             else
             {
-                MessageBox.Show("That bai");
+                MessageBox.Show("Tạo tài khoản không thành công", "THÔNG BÁO");
             }
         }
     }

@@ -40,32 +40,45 @@ namespace MultiCardSystem.Screen
         {
             if(txbID.Text == "")
             {
-                MessageBox.Show("aaa");
+                MessageBox.Show("Bạn phải nhập ID khách hàng", "CẢNH BÁO");
                 txbID.Focus();
+                return;
             }
             else if(txbHo.Text == "")
             {
+                MessageBox.Show("Bạn phải nhập Họ tên khách hàng", "CẢNH BÁO");
                 txbHo.Focus();
+                return;
             }
             else if (txbTen.Text == "")
             {
+                MessageBox.Show("Bạn phải nhập Họ tên khách hàng", "CẢNH BÁO");
                 txbTen.Focus();
+                return;
             }
-            else if (txbNgaySinh.Text == "")
+            else if (dtpDob.Value ==null)
             {
-                txbNgaySinh.Focus();
+                MessageBox.Show("Bạn phải nhập ngày sinh khách hàng", "CẢNH BÁO");
+                dtpDob.Focus();
+                return;
             }
             else if (txbCMND.Text == "")
             {
+                MessageBox.Show("Bạn phải nhập số CMND khách hàng", "CẢNH BÁO");
                 txbCMND.Focus();
+                return;
             }
             else if (txbSDT.Text == "")
             {
+                MessageBox.Show("Bạn phải nhập SĐT khách hàng", "CẢNH BÁO");
                 txbSDT.Focus();
+                return;
             }
             else if (txbDiaChi.Text == "")
             {
+                MessageBox.Show("Bạn phải nhập địa chỉ khách hàng", "CẢNH BÁO");
                 txbDiaChi.Focus();
+                return;
             }
             else
             {
@@ -74,7 +87,7 @@ namespace MultiCardSystem.Screen
                     ID = txbID.Text,
                     FirstName = txbHo.Text,
                     LastName = txbTen.Text,
-                    Dob = txbNgaySinh.Text,
+                    Dob = dtpDob.Value.ToString(),
                     CMND = txbCMND.Text,
                     PhoneNumber = txbSDT.Text,
                     Address = txbDiaChi.Text,
@@ -82,11 +95,11 @@ namespace MultiCardSystem.Screen
                 bool result = await  _customerService.Insert(customer);
                 if (result)
                 {
-                    MessageBox.Show("them thanh cong");
+                    MessageBox.Show("Đã thêm 1 khách hàng mới", "THÔNG BÁO");
                 }
                 else
                 {
-                    MessageBox.Show("them that bai");
+                    MessageBox.Show("Thêm khách hàng không thành công","THÔNG BÁO");
                 }
             }
         }

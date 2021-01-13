@@ -12,13 +12,25 @@ namespace MultiCardSystem.Screen
 {
     public partial class TraCuuSoDu : Form
     {
-        public TraCuuSoDu()
+        String nameAccount;
+        String idAccount;
+        String idCard;
+        String money;
+        public TraCuuSoDu(String nameAccount, String idAccount, String idCard, String money)
         {
             InitializeComponent();
+            this.nameAccount = nameAccount;
+            this.idAccount = idAccount;
+            this.idCard = idCard;
+            this.money = money;
         }
 
         private void TraCuuSoDu_Load(object sender, EventArgs e)
         {
+            txtTenTaiKhoan.Text = this.nameAccount;
+            txbSTK.Text = this.idAccount;
+            txbSoThe.Text = this.idCard;
+            this.txbSoDu.Text = this.money+" VNĐ" ;
 
         }
 

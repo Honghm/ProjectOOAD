@@ -33,13 +33,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txbPINCode = new System.Windows.Forms.TextBox();
             this.btnQuayLai = new System.Windows.Forms.PictureBox();
             this.btnXacNhan = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lbSoTien = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.lbSoTien = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnQuayLai)).BeginInit();
@@ -66,13 +66,12 @@
             this.label1.Size = new System.Drawing.Size(439, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "XÁC NHẬN RÚT TIỀN";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txbPINCode);
             this.panel2.Location = new System.Drawing.Point(100, 230);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(650, 85);
@@ -89,13 +88,14 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Mã PIN:\r\n";
             // 
-            // textBox1
+            // txbPINCode
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(365, 25);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(236, 36);
-            this.textBox1.TabIndex = 2;
+            this.txbPINCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbPINCode.Location = new System.Drawing.Point(365, 25);
+            this.txbPINCode.Name = "txbPINCode";
+            this.txbPINCode.Size = new System.Drawing.Size(236, 36);
+            this.txbPINCode.TabIndex = 2;
+            this.txbPINCode.UseSystemPasswordChar = true;
             // 
             // btnQuayLai
             // 
@@ -132,16 +132,16 @@
             this.panel3.Size = new System.Drawing.Size(650, 85);
             this.panel3.TabIndex = 13;
             // 
-            // label3
+            // label5
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(105, 28);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(242, 29);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Bạn chắc chắn rút ";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(573, 28);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(28, 29);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "?";
             // 
             // lbSoTien
             // 
@@ -155,16 +155,16 @@
             this.lbSoTien.Text = "0";
             this.lbSoTien.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label5
+            // label3
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(573, 28);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(28, 29);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "?";
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(105, 28);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(242, 29);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Bạn chắc chắn rút ";
             // 
             // XacNhanMaPIN
             // 
@@ -202,7 +202,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txbPINCode;
         private System.Windows.Forms.PictureBox btnQuayLai;
         private System.Windows.Forms.PictureBox btnXacNhan;
         private System.Windows.Forms.Panel panel3;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MultiCardSystem.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,21 +13,22 @@ namespace MultiCardSystem.Screen
 {
     public partial class XacNhanMaPIN : Form
     {
-        String soTien;
+        string soTien;
+        string ID;
+        
         public XacNhanMaPIN()
         {
+            
             InitializeComponent();
         }
-        public XacNhanMaPIN(String soTien)
+        private readonly AccountService _accountService = new AccountService();
+        public XacNhanMaPIN(string soTien, string id)
         {
             InitializeComponent();
             this.soTien = soTien;
+            this.ID = id;
         }
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void btnQuayLai_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -37,9 +39,21 @@ namespace MultiCardSystem.Screen
             this.lbSoTien.Text = this.soTien + " VNĐ";
         }
 
-        private void btnXacNhan_Click(object sender, EventArgs e)
+        private async void btnXacNhan_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (txbPINCode.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập mã PIN!", "CẢNH BÁO");
+                return;
+            }
+            bool result = await _accountService.RutTien(ID, txbPINCode.Text, decimal.Parse(soTien));
+
+            if (result == true)
+                MessageBox.Show("Bạn đã rút " + soTien+" VND", "THÔNG BÁO");
+            else
+                MessageBox.Show("Rút tiền không thành công", "THÔNG BÁO");
+            this.Close(); 
+
         }
     }
 }

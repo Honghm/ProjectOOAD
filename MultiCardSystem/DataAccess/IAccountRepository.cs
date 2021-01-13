@@ -20,6 +20,7 @@ namespace MultiCardSystem.DataAccess
 
         Task<bool> RutTien(string id,string PIN,decimal money);
         Task<bool> ChuyenTien(string id, string ReceiveAccount, decimal money);
+        Task<Account> GetAccountByID(string id);
 
     }
 }

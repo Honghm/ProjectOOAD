@@ -54,5 +54,9 @@ namespace MultiCardSystem.Services
         {
             return await _AccountRepository.ChuyenTien(id, ReceiveAccount, money);
         }
+        public async Task<Account> GetAccountByID(string id)
+        {
+            return await _AccountRepository.GetAccountByID(id);
+        }
     }
 }

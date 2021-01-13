@@ -48,9 +48,9 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.txbCMND = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnTao = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.txbNgaySinh = new System.Windows.Forms.TextBox();
+            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -73,7 +73,7 @@
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(181, 49);
             this.btnThoat.TabIndex = 31;
-            this.btnThoat.Text = "Thoát";
+            this.btnThoat.Text = "Quay lại";
             this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
@@ -81,7 +81,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 14);
+            this.label1.Location = new System.Drawing.Point(39, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(547, 39);
             this.label1.TabIndex = 0;
@@ -114,7 +114,7 @@
             this.txbDiaChi.Multiline = true;
             this.txbDiaChi.Name = "txbDiaChi";
             this.txbDiaChi.Size = new System.Drawing.Size(222, 62);
-            this.txbDiaChi.TabIndex = 1;
+            this.txbDiaChi.TabIndex = 6;
             // 
             // label9
             // 
@@ -129,10 +129,11 @@
             // txbID
             // 
             this.txbID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbID.Location = new System.Drawing.Point(142, 14);
+            this.txbID.Location = new System.Drawing.Point(156, 14);
             this.txbID.Name = "txbID";
+            this.txbID.ReadOnly = true;
             this.txbID.Size = new System.Drawing.Size(56, 26);
-            this.txbID.TabIndex = 1;
+            this.txbID.TabIndex = 30;
             // 
             // panel8
             // 
@@ -150,7 +151,7 @@
             this.txbSDT.Location = new System.Drawing.Point(147, 14);
             this.txbSDT.Name = "txbSDT";
             this.txbSDT.Size = new System.Drawing.Size(222, 26);
-            this.txbSDT.TabIndex = 1;
+            this.txbSDT.TabIndex = 5;
             // 
             // label8
             // 
@@ -234,7 +235,7 @@
             this.txbCMND.Location = new System.Drawing.Point(147, 14);
             this.txbCMND.Name = "txbCMND";
             this.txbCMND.Size = new System.Drawing.Size(222, 26);
-            this.txbCMND.TabIndex = 1;
+            this.txbCMND.TabIndex = 4;
             // 
             // label6
             // 
@@ -246,35 +247,38 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "CMND:";
             // 
-            // btnTao
+            // btnSua
             // 
-            this.btnTao.BackColor = System.Drawing.Color.Blue;
-            this.btnTao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTao.ForeColor = System.Drawing.Color.White;
-            this.btnTao.Location = new System.Drawing.Point(615, 431);
-            this.btnTao.Name = "btnTao";
-            this.btnTao.Size = new System.Drawing.Size(181, 49);
-            this.btnTao.TabIndex = 30;
-            this.btnTao.Text = "Sửa";
-            this.btnTao.UseVisualStyleBackColor = false;
+            this.btnSua.BackColor = System.Drawing.Color.Blue;
+            this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.ForeColor = System.Drawing.Color.White;
+            this.btnSua.Location = new System.Drawing.Point(615, 431);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(181, 49);
+            this.btnSua.TabIndex = 7;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Transparent;
-            this.panel5.Controls.Add(this.txbNgaySinh);
+            this.panel5.Controls.Add(this.dtpNgaySinh);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Location = new System.Drawing.Point(37, 244);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(372, 52);
             this.panel5.TabIndex = 25;
             // 
-            // txbNgaySinh
+            // dtpNgaySinh
             // 
-            this.txbNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbNgaySinh.Location = new System.Drawing.Point(147, 14);
-            this.txbNgaySinh.Name = "txbNgaySinh";
-            this.txbNgaySinh.Size = new System.Drawing.Size(222, 26);
-            this.txbNgaySinh.TabIndex = 1;
+            this.dtpNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgaySinh.Location = new System.Drawing.Point(147, 15);
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.Size = new System.Drawing.Size(222, 26);
+            this.dtpNgaySinh.TabIndex = 3;
+            this.dtpNgaySinh.Value = new System.DateTime(2021, 1, 13, 21, 31, 23, 0);
             // 
             // panel4
             // 
@@ -291,18 +295,18 @@
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.txbID);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(347, 98);
+            this.panel2.Location = new System.Drawing.Point(319, 98);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(207, 52);
+            this.panel2.Size = new System.Drawing.Size(235, 52);
             this.panel2.TabIndex = 22;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(135, 12);
+            this.panel1.Location = new System.Drawing.Point(108, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(585, 68);
+            this.panel1.Size = new System.Drawing.Size(643, 68);
             this.panel1.TabIndex = 21;
             // 
             // SuaKhachHang
@@ -317,7 +321,7 @@
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
-            this.Controls.Add(this.btnTao);
+            this.Controls.Add(this.btnSua);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
@@ -327,6 +331,7 @@
             this.Name = "SuaKhachHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sửa thông tin khách hàng";
+            this.Load += new System.EventHandler(this.SuaKhachHang_Load);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel8.ResumeLayout(false);
@@ -368,11 +373,11 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox txbCMND;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btnTao;
+        private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox txbNgaySinh;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DateTimePicker dtpNgaySinh;
     }
 }

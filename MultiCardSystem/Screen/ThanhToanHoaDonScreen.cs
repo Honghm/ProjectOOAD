@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MultiCardSystem.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +13,15 @@ namespace MultiCardSystem.Screen
 {
     public partial class ThanhToanHoaDonScreen : Form
     {
-        public ThanhToanHoaDonScreen()
+        String ID;
+     
+       
+        public ThanhToanHoaDonScreen(String id)
         {
+            this.ID = id;
             InitializeComponent();
         }
-
+        private readonly BillService _billService = new BillService();
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -29,10 +34,16 @@ namespace MultiCardSystem.Screen
 
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
+            
             this.Hide();
-            ThanhToanHoaDon2 thanhToan = new ThanhToanHoaDon2();
+            ThanhToanHoaDon2 thanhToan = new ThanhToanHoaDon2(txbMaHoaDon.Text);
             thanhToan.ShowDialog();
             this.Show();
+        }
+
+        private void ThanhToanHoaDonScreen_Load(object sender, EventArgs e)
+        {
+            dgvHoaDon.DataSource = _billService.GetAllBills(ID).ToList();
         }
     }
 }

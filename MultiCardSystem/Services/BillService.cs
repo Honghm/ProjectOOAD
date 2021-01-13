@@ -23,9 +23,9 @@ namespace MultiCardSystem.Services
         {
             return await _BillRepository.Delete(id);
         }
-        public List<Bill> GetAllBills()
+        public List<Bill> GetAllBills(string id)
         {
-            return _BillRepository.GetAllBills();
+            return _BillRepository.GetAllBills(id);
         }
 
         public async Task<Bill> GetBillById(string id)
@@ -39,6 +39,10 @@ namespace MultiCardSystem.Services
         public async Task<bool> Update(Bill request)
         {
             return await _BillRepository.Update(request);
+        }
+        public async Task<bool> ThanhToan(string id)
+        {
+            return await _BillRepository.ThanhToan(id);
         }
     }
 }

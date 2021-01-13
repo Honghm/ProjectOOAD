@@ -12,8 +12,10 @@ namespace MultiCardSystem.Screen
 {
     public partial class RutTienScreen : Form
     {
-        public RutTienScreen()
+        string ID;
+        public RutTienScreen(string id)
         {
+            this.ID = id;
             InitializeComponent();
         }
 
@@ -25,7 +27,7 @@ namespace MultiCardSystem.Screen
         private void btnRut200_Click(object sender, EventArgs e)
         {
             this.Hide();
-            XacNhanMaPIN xacNhan = new XacNhanMaPIN("200.000");
+            XacNhanMaPIN xacNhan = new XacNhanMaPIN("200000", ID);
             xacNhan.ShowDialog();
             this.Show();
         }
@@ -33,7 +35,7 @@ namespace MultiCardSystem.Screen
         private void btnRut500_Click(object sender, EventArgs e)
         {
             this.Hide();
-            XacNhanMaPIN xacNhan = new XacNhanMaPIN("500.000");
+            XacNhanMaPIN xacNhan = new XacNhanMaPIN("500000",ID);
             xacNhan.ShowDialog();
             this.Show();
         }
@@ -41,7 +43,7 @@ namespace MultiCardSystem.Screen
         private void btnRut1tr_Click(object sender, EventArgs e)
         {
             this.Hide();
-            XacNhanMaPIN xacNhan = new XacNhanMaPIN("1.000.000");
+            XacNhanMaPIN xacNhan = new XacNhanMaPIN("1000000", ID);
             xacNhan.ShowDialog();
             this.Show();
         }
@@ -49,7 +51,7 @@ namespace MultiCardSystem.Screen
         private void btnRut2tr_Click(object sender, EventArgs e)
         {
             this.Hide();
-            XacNhanMaPIN xacNhan = new XacNhanMaPIN("2.000.000");
+            XacNhanMaPIN xacNhan = new XacNhanMaPIN("2000000", ID);
             xacNhan.ShowDialog();
             this.Show();
         }
@@ -57,7 +59,7 @@ namespace MultiCardSystem.Screen
         private void btnRut3tr_Click(object sender, EventArgs e)
         {
             this.Hide();
-            XacNhanMaPIN xacNhan = new XacNhanMaPIN("3.000.000");
+            XacNhanMaPIN xacNhan = new XacNhanMaPIN("3000000", ID);
             xacNhan.ShowDialog();
             this.Show();
         }
@@ -65,7 +67,7 @@ namespace MultiCardSystem.Screen
         private void btnRut5tr_Click(object sender, EventArgs e)
         {
             this.Hide();
-            XacNhanMaPIN xacNhan = new XacNhanMaPIN("5.000.000");
+            XacNhanMaPIN xacNhan = new XacNhanMaPIN("5000000", ID);
             xacNhan.ShowDialog();
             this.Show();
         }
@@ -73,7 +75,7 @@ namespace MultiCardSystem.Screen
         private void btnTiepTuc_Click(object sender, EventArgs e)
         {
             this.Hide();
-            RutTienSoKhac rutTienSoKhac = new RutTienSoKhac();
+            RutTienSoKhac rutTienSoKhac = new RutTienSoKhac(ID);
             rutTienSoKhac.ShowDialog();
             this.Show();
         }

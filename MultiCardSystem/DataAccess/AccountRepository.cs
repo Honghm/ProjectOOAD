@@ -59,6 +59,13 @@ namespace MultiCardSystem.DataAccess
 
         }
 
+        public async Task<Account> GetAccountByID(string id)
+        {
+            var account = await _context.accounts.FindAsync(id);
+            if (account == null) return null;
+            return account;
+        }
+
         public List<Account> GetAllAccounts()
         {
             return _context.accounts.ToList();

@@ -10,9 +10,10 @@ namespace MultiCardSystem.DataAccess
    public interface IBillRepository
     {
         Task<Bill> GetBillById(string id);
-        List<Bill> GetAllBills();
+        List<Bill> GetAllBills(string id);
         Task<bool> Insert(Bill request);
         Task<bool> Delete(string id);
         Task<bool> Update(Bill request);
+        Task<bool> ThanhToan(string id);
     }
 }

@@ -98,6 +98,7 @@
             this.txbMkHienTai.Name = "txbMkHienTai";
             this.txbMkHienTai.Size = new System.Drawing.Size(236, 36);
             this.txbMkHienTai.TabIndex = 1;
+            this.txbMkHienTai.UseSystemPasswordChar = true;
             // 
             // panel2
             // 
@@ -127,6 +128,7 @@
             this.txbMkMoi.Name = "txbMkMoi";
             this.txbMkMoi.Size = new System.Drawing.Size(236, 36);
             this.txbMkMoi.TabIndex = 2;
+            this.txbMkMoi.UseSystemPasswordChar = true;
             // 
             // panel4
             // 
@@ -156,6 +158,7 @@
             this.txbNhapLaiMk.Name = "txbNhapLaiMk";
             this.txbNhapLaiMk.Size = new System.Drawing.Size(236, 36);
             this.txbNhapLaiMk.TabIndex = 3;
+            this.txbNhapLaiMk.UseSystemPasswordChar = true;
             // 
             // btnQuayLai
             // 
@@ -179,6 +182,7 @@
             this.btnXacNhan.Size = new System.Drawing.Size(249, 52);
             this.btnXacNhan.TabIndex = 11;
             this.btnXacNhan.TabStop = false;
+            this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
             // 
             // DoiMatMaScreen
             // 

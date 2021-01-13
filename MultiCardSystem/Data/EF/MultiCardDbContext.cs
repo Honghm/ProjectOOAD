@@ -52,6 +52,7 @@ namespace MultiCardSystem.Data.EF
             modelBuilder.Entity<Bill>().Property(x => x.DateCreated).IsRequired().HasMaxLength(100);
             modelBuilder.Entity<Bill>().Property(x => x.ServiceMachine).IsRequired().HasMaxLength(100);
             modelBuilder.Entity<Bill>().Property(x => x.TotalMoney).IsRequired();
+            modelBuilder.Entity<Bill>().Property(x => x.statusBill).IsRequired();
             // modelBuilder.Entity<Bill>().HasRequired<Account>(b => b.CurrentAccount).WithMany(a => a.Bills).HasForeignKey<int>(b => b.CurrentAccountID);
             modelBuilder.Entity<Bill>()
             .HasRequired(b=>b.CurrentAccount)            //hasone
@@ -62,6 +63,11 @@ namespace MultiCardSystem.Data.EF
             .HasRequired(b => b.CurrentSupplier)         //hasone
             .WithMany(a => a.Bills)
             .HasForeignKey(b => b.CurrentSupplierID);
+
+            modelBuilder.Entity<Bill>()
+                .HasRequired(b => b.CurrentReport)
+                .WithMany(a => a.ListBills)
+                .HasForeignKey(b => b.CurrentReportID);
 
             modelBuilder.Entity<Customer>().ToTable("Customer");
             modelBuilder.Entity<Customer>().HasKey(x => x.ID);

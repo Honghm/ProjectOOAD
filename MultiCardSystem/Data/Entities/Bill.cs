@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MultiCardSystem.Enum;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,11 +15,14 @@ namespace MultiCardSystem.Data.Entities
         public string ServiceMachine { get; set; }
 
         public decimal TotalMoney { get; set; }
+        public StatusBill statusBill { get; set; }
 
         public string CurrentAccountID { get; set; }
         public Account CurrentAccount { get; set; }
 
         public string CurrentSupplierID { get; set; }
         public Supplier CurrentSupplier { get; set; }
+        public string CurrentReportID { get; set; }
+        public Report CurrentReport { get; set; }
     }
 }

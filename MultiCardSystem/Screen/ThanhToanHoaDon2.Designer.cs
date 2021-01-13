@@ -38,7 +38,7 @@
             this.btnXacNhan = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txbSoTien = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnQuayLai)).BeginInit();
@@ -95,7 +95,6 @@
             this.txbMaHoaDon.ReadOnly = true;
             this.txbMaHoaDon.Size = new System.Drawing.Size(236, 36);
             this.txbMaHoaDon.TabIndex = 2;
-            this.txbMaHoaDon.Text = "121235468";
             // 
             // btnQuayLai
             // 
@@ -125,7 +124,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.txbSoTien);
             this.panel3.Location = new System.Drawing.Point(98, 264);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(650, 85);
@@ -142,30 +141,33 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Số tiền thanh toán:\r\n";
             // 
-            // textBox1
+            // txbSoTien
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(365, 25);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(236, 36);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "1.000.000 VNĐ";
+            this.txbSoTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbSoTien.Location = new System.Drawing.Point(365, 25);
+            this.txbSoTien.Name = "txbSoTien";
+            this.txbSoTien.ReadOnly = true;
+            this.txbSoTien.Size = new System.Drawing.Size(236, 36);
+            this.txbSoTien.TabIndex = 2;
             // 
             // ThanhToanHoaDon2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MultiCardSystem.Properties.Resources.background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(862, 493);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnQuayLai);
             this.Controls.Add(this.btnXacNhan);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ThanhToanHoaDon2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thanh toán hóa đơn";
+            this.Load += new System.EventHandler(this.ThanhToanHoaDon2_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -189,6 +191,6 @@
         private System.Windows.Forms.PictureBox btnXacNhan;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txbSoTien;
     }
 }

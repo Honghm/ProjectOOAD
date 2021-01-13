@@ -194,7 +194,6 @@ D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\System.Memory.xml
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\System.Numerics.Vectors.xml
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\System.Threading.Tasks.Extensions.xml
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.csprojAssemblyReference.cache
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Form1.resources
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Migrations.test.resources
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Properties.Resources.resources
@@ -219,3 +218,5 @@ D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.csproj.Cor
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.csproj.CopyComplete
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.exe
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.pdb
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.csprojAssemblyReference.cache
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Migrations.addbill.resources

@@ -81,6 +81,7 @@
             this.btnDangNhap.Text = "ĐĂNG NHẬP";
             this.btnDangNhap.UseVisualStyleBackColor = false;
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
+            this.btnDangNhap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btnDangNhap_KeyPress);
             // 
             // lbDangNhap
             // 
@@ -109,6 +110,7 @@
             this.txbMatKhau.Size = new System.Drawing.Size(220, 30);
             this.txbMatKhau.TabIndex = 2;
             this.txbMatKhau.UseSystemPasswordChar = true;
+            this.txbMatKhau.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbMatKhau_KeyPress);
             // 
             // lbMatKhau
             // 
@@ -185,6 +187,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoginScreen_FormClosing);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.LoginScreen_KeyDown);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.LoginScreen_KeyPress);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

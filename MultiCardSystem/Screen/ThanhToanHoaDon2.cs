@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MultiCardSystem.Data.Entities;
+using MultiCardSystem.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,26 +14,39 @@ namespace MultiCardSystem.Screen
 {
     public partial class ThanhToanHoaDon2 : Form
     {
-        public ThanhToanHoaDon2()
+        String idBill;
+        public ThanhToanHoaDon2(String idBill)
         {
+            this.idBill = idBill;
             InitializeComponent();
         }
-
+        private readonly BillService _billService = new BillService();
         private void btnQuayLai_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btnXacNhan_Click(object sender, EventArgs e)
+        private async void btnXacNhan_Click(object sender, EventArgs e)
         {
-            //if (MessageBox.Show("Hóa đơn thanh toán thành công!", "Thông báo", MessageBoxButtons.OK) == System.Windows.Forms.DialogResult.OK)
-            //{
-            //    this.Close();
-            //}
-            this.Hide();
-            XacNhanMaPIN xacNhan = new XacNhanMaPIN();
-            xacNhan.ShowDialog();
-            this.Show(); 
+           
+            bool result = await _billService.ThanhToan(idBill);
+            if(result)
+            {
+                MessageBox.Show("Thanh toán hóa đơn thành công", "THÔNG BÁO");
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Thanh toán hóa đơn không thành công", "THÔNG BÁO");
+            }
+          
+        }
+
+        private async void ThanhToanHoaDon2_Load(object sender, EventArgs e)
+        {
+            Bill bill = await _billService.GetBillById(idBill);
+            txbMaHoaDon.Text = bill.IDBill;
+            txbSoTien.Text = bill.TotalMoney.ToString()+ " VNĐ"; 
         }
     }
 }

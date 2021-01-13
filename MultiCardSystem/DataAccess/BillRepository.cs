@@ -27,7 +27,7 @@ namespace MultiCardSystem.DataAccess
             return await _context.SaveChangesAsync() > 0;
         }
 
-        public List<Bill> GetAllBills()
+        public List<Bill> GetAllBills(string id)
         {
             //var query = from c in _context.Bills
             //            select c;
@@ -41,7 +41,16 @@ namespace MultiCardSystem.DataAccess
             //        TotalMoney = x.TotalMoney,
             //    }).ToList();
             //return data;
-            return _context.Bills.ToList();
+            List<Bill> lst = _context.Bills.ToList();
+            List<Bill> lst1 = new List<Bill>();
+            foreach(Bill b in lst)
+            {
+                if(b.CurrentAccountID == id)
+                {
+                    lst1.Add(b);
+                }    
+            }
+            return lst1;
         }
 
         public async Task<Bill> GetBillById(string id)
@@ -59,6 +68,7 @@ namespace MultiCardSystem.DataAccess
                 ServiceName = request.ServiceName,
                 DateCreated = request.DateCreated,
                 ServiceMachine = request.ServiceMachine,
+                statusBill = request.statusBill,
                 TotalMoney = request.TotalMoney,
                 CurrentAccountID = request.CurrentAccountID,
                 CurrentSupplierID = request.CurrentSupplierID,
@@ -66,6 +76,23 @@ namespace MultiCardSystem.DataAccess
             };
             _context.Bills.Add(bill);
             return await _context.SaveChangesAsync() > 0;
+        }
+
+        public async Task<bool> ThanhToan(string id)
+        {
+            var bill = await _context.Bills.FindAsync(id);
+            var account = await _context.accounts.FindAsync(bill.CurrentAccountID);
+            if (bill == null) return false;
+            if(bill.statusBill == Enum.StatusBill.unpaid)
+            {
+                account.Money -= bill.TotalMoney;
+                bill.statusBill = Enum.StatusBill.paid;
+                return await _context.SaveChangesAsync() > 0;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public async Task<bool> Update(Bill request)

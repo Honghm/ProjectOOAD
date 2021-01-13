@@ -12,8 +12,10 @@ namespace MultiCardSystem.Screen
 {
     public partial class RutTienSoKhac : Form
     {
-        public RutTienSoKhac()
+        String ID;
+        public RutTienSoKhac(string id)
         {
+            this.ID = id;
             InitializeComponent();
         }
 
@@ -24,8 +26,23 @@ namespace MultiCardSystem.Screen
 
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
+            if(txbSoTien.Text=="")
+            {
+                MessageBox.Show("Bạn chưa nhập số tiền cần rút!", "CẢNH BÁO");
+                return;
+            }
+            if (decimal.Parse(txbSoTien.Text) < 0)
+            {
+                MessageBox.Show("Số tiền rút phải lớn hơn 0", "CẢNH BÁO");
+                return;
+            }
+            if (decimal.Parse(txbSoTien.Text) % 50000 != 0)
+            {
+                MessageBox.Show("Số tiền rút phải làm bội số của 50000 VNĐ", "CẢNH BÁO");
+                return;
+            }
             this.Hide();
-            XacNhanMaPIN xacNhan = new XacNhanMaPIN(this.txbSoTien.Text);
+            XacNhanMaPIN xacNhan = new XacNhanMaPIN(this.txbSoTien.Text, this.ID);
             xacNhan.ShowDialog();
             this.Show();
         }

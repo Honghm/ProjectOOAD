@@ -1,4 +1,5 @@
-﻿using MultiCardSystem.Services;
+﻿using MultiCardSystem.Data.Entities;
+using MultiCardSystem.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,11 +37,32 @@ namespace MultiCardSystem.Screen
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
+            if (txbSoTaiKhoan.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập số tài khoản", "CẢNH BÁO");
+                txbSoTaiKhoan.Focus();
+                return;
+            }
+            if (txbMatKhau.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập mật khẩu", "CẢNH BÁO");
+                txbMatKhau.Focus();
+                return;
+            }
             this.Hide();
             if (_accountService.LoginUser(txbSoTaiKhoan.Text, txbMatKhau.Text))
             {
-                TrangChuScreen trangChu = new TrangChuScreen();
-                trangChu.ShowDialog();
+                List<Account> lst = _accountService.GetAllAccounts();
+                foreach(Account a in lst)
+                {
+                    if(a.UserName == txbSoTaiKhoan.Text)
+                    {
+                        Console.WriteLine(a.ID);
+                        TrangChuScreen trangChu = new TrangChuScreen(a.ID);
+                        trangChu.ShowDialog();
+                    }
+                }
+               
             }
             else if (_accountService.LoginAdmin(txbSoTaiKhoan.Text, txbMatKhau.Text))
             {
@@ -57,6 +79,35 @@ namespace MultiCardSystem.Screen
         private void LoginScreen_FormClosing(object sender, FormClosingEventArgs e)
         {
            
+        }
+
+        private void LoginScreen_KeyDown(object sender, KeyEventArgs e)
+        {
+          
+        }
+
+        private void LoginScreen_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //if (e.KeyChar == 13)
+            //{
+            //    btnDangNhap.PerformClick();
+            //}
+        }
+
+        private void btnDangNhap_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //if(e.KeyChar == 13)
+            //{
+            //    btnDangNhap.PerformClick();
+            //}
+        }
+
+        private void txbMatKhau_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                btnDangNhap.PerformClick();
+            }
         }
     }
 }
