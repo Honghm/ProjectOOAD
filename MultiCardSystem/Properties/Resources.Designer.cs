@@ -73,26 +73,6 @@ namespace MultiCardSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btn {
-            get {
-                object obj = ResourceManager.GetObject("btn", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap btn_right {
-            get {
-                object obj = ResourceManager.GetObject("btn_right", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap btn1Tr {
             get {
                 object obj = ResourceManager.GetObject("btn1Tr", resourceCulture);
@@ -266,16 +246,6 @@ namespace MultiCardSystem.Properties {
         internal static System.Drawing.Bitmap btnXacNhan {
             get {
                 object obj = ResourceManager.GetObject("btnXacNhan", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icon_tick {
-            get {
-                object obj = ResourceManager.GetObject("icon-tick", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

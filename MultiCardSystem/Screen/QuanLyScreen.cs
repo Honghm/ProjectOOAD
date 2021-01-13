@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MultiCardSystem.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,8 +18,10 @@ namespace MultiCardSystem.Screen
         {
             InitializeComponent();
         }
+        private readonly AccountService _accountService = new AccountService();
+        private readonly CustomerService _customerService = new CustomerService();
+        private readonly CardService _cardService = new CardService();
 
- 
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
@@ -48,6 +51,22 @@ namespace MultiCardSystem.Screen
         private void tcQuanLy_Selecting(object sender, TabControlCancelEventArgs e)
         {
 
+        }
+        private void QuanLyScreen_Load(object sender, EventArgs e)
+        {
+            dgvTaiKhoan.DataSource = _accountService.GetAllAccounts();
+            dgvKhachHang.DataSource = _customerService.GetAllCustomers();
+            //Customer kh1 = await _customerService.GetCustomerById("1");
+            //MessageBox.Show(kh1.Cards.ID);
+            //MessageBox.Show(kh1.Cards.IDCard);
+            //MessageBox.Show(kh1.FirstName);
+            //MessageBox.Show(kh1.CMND);
+            //MessageBox.Show(kh1.Cards.PINCode);
+            // List<Customer> lst = new List<Customer>();
+            //lst.Add(kh1);
+            // dgvKhachHang.DataSource = lst;
+
+            dgvThe.DataSource = _cardService.GetAllCards();
         }
 
         private void btnThemTaiKhoan_Click(object sender, EventArgs e)

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyScreen));
             this.tcQuanLy = new System.Windows.Forms.TabControl();
             this.qlTaiKhoan = new System.Windows.Forms.TabPage();
@@ -36,9 +37,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnXoaTaiKhoan = new System.Windows.Forms.Button();
+            this.btnSuaTaiKhoan = new System.Windows.Forms.Button();
             this.btnThemTaiKhoan = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvTaiKhoan = new System.Windows.Forms.DataGridView();
             this.qlKhachHang = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -48,7 +50,7 @@
             this.btnSuaKhachHang = new System.Windows.Forms.Button();
             this.btnThemKhachHang = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvKhachHang = new System.Windows.Forms.DataGridView();
             this.qlThe = new System.Windows.Forms.TabPage();
             this.panel5 = new System.Windows.Forms.Panel();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -57,22 +59,45 @@
             this.btnXoaThe = new System.Windows.Forms.Button();
             this.btnThemThe = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dgvThe = new System.Windows.Forms.DataGridView();
             this.btnThoat = new System.Windows.Forms.TabPage();
-            this.btnSuaTaiKhoan = new System.Windows.Forms.Button();
+            this.accountBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDAccountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passWordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.moneyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roleNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.iDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dobDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cMNDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cardBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.iDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDCardDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateCreatedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pINCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tcQuanLy.SuspendLayout();
             this.qlTaiKhoan.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTaiKhoan)).BeginInit();
             this.qlKhachHang.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
             this.qlThe.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvThe)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accountBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tcQuanLy
@@ -95,7 +120,7 @@
             this.qlTaiKhoan.Controls.Add(this.panel3);
             this.qlTaiKhoan.Controls.Add(this.panel4);
             this.qlTaiKhoan.Controls.Add(this.label4);
-            this.qlTaiKhoan.Controls.Add(this.dataGridView2);
+            this.qlTaiKhoan.Controls.Add(this.dgvTaiKhoan);
             this.qlTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.qlTaiKhoan.Location = new System.Drawing.Point(4, 29);
             this.qlTaiKhoan.Name = "qlTaiKhoan";
@@ -153,6 +178,19 @@
             this.btnXoaTaiKhoan.Text = "Xóa";
             this.btnXoaTaiKhoan.UseVisualStyleBackColor = false;
             // 
+            // btnSuaTaiKhoan
+            // 
+            this.btnSuaTaiKhoan.BackColor = System.Drawing.Color.DimGray;
+            this.btnSuaTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuaTaiKhoan.ForeColor = System.Drawing.Color.White;
+            this.btnSuaTaiKhoan.Location = new System.Drawing.Point(299, 22);
+            this.btnSuaTaiKhoan.Name = "btnSuaTaiKhoan";
+            this.btnSuaTaiKhoan.Size = new System.Drawing.Size(139, 37);
+            this.btnSuaTaiKhoan.TabIndex = 6;
+            this.btnSuaTaiKhoan.Text = "Sửa";
+            this.btnSuaTaiKhoan.UseVisualStyleBackColor = false;
+            this.btnSuaTaiKhoan.Click += new System.EventHandler(this.btnSuaTaiKhoan_Click);
+            // 
             // btnThemTaiKhoan
             // 
             this.btnThemTaiKhoan.BackColor = System.Drawing.Color.Blue;
@@ -176,22 +214,32 @@
             this.label4.TabIndex = 1;
             this.label4.Text = "QUẢN LÝ TÀI KHOẢN NGƯỜI DÙNG";
             // 
-            // dataGridView2
+            // dgvTaiKhoan
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(57, 105);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(733, 222);
-            this.dataGridView2.TabIndex = 0;
+            this.dgvTaiKhoan.AutoGenerateColumns = false;
+            this.dgvTaiKhoan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTaiKhoan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn,
+            this.iDAccountDataGridViewTextBoxColumn,
+            this.userNameDataGridViewTextBoxColumn,
+            this.passWordDataGridViewTextBoxColumn,
+            this.moneyDataGridViewTextBoxColumn,
+            this.statusDataGridViewTextBoxColumn,
+            this.roleNameDataGridViewTextBoxColumn});
+            this.dgvTaiKhoan.DataSource = this.accountBindingSource;
+            this.dgvTaiKhoan.Location = new System.Drawing.Point(57, 105);
+            this.dgvTaiKhoan.Name = "dgvTaiKhoan";
+            this.dgvTaiKhoan.RowHeadersWidth = 51;
+            this.dgvTaiKhoan.RowTemplate.Height = 24;
+            this.dgvTaiKhoan.Size = new System.Drawing.Size(733, 222);
+            this.dgvTaiKhoan.TabIndex = 0;
             // 
             // qlKhachHang
             // 
             this.qlKhachHang.Controls.Add(this.panel2);
             this.qlKhachHang.Controls.Add(this.panel1);
             this.qlKhachHang.Controls.Add(this.label1);
-            this.qlKhachHang.Controls.Add(this.dataGridView1);
+            this.qlKhachHang.Controls.Add(this.dgvKhachHang);
             this.qlKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.qlKhachHang.Location = new System.Drawing.Point(4, 29);
             this.qlKhachHang.Name = "qlKhachHang";
@@ -285,22 +333,32 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "QUẢN LÝ KHÁCH HÀNG";
             // 
-            // dataGridView1
+            // dgvKhachHang
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(57, 105);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(733, 222);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvKhachHang.AutoGenerateColumns = false;
+            this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKhachHang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn1,
+            this.firstNameDataGridViewTextBoxColumn,
+            this.lastNameDataGridViewTextBoxColumn,
+            this.dobDataGridViewTextBoxColumn,
+            this.cMNDDataGridViewTextBoxColumn,
+            this.phoneNumberDataGridViewTextBoxColumn,
+            this.addressDataGridViewTextBoxColumn});
+            this.dgvKhachHang.DataSource = this.customerBindingSource;
+            this.dgvKhachHang.Location = new System.Drawing.Point(57, 105);
+            this.dgvKhachHang.Name = "dgvKhachHang";
+            this.dgvKhachHang.RowHeadersWidth = 51;
+            this.dgvKhachHang.RowTemplate.Height = 24;
+            this.dgvKhachHang.Size = new System.Drawing.Size(733, 222);
+            this.dgvKhachHang.TabIndex = 0;
             // 
             // qlThe
             // 
             this.qlThe.Controls.Add(this.panel5);
             this.qlThe.Controls.Add(this.panel6);
             this.qlThe.Controls.Add(this.label6);
-            this.qlThe.Controls.Add(this.dataGridView3);
+            this.qlThe.Controls.Add(this.dgvThe);
             this.qlThe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.qlThe.Location = new System.Drawing.Point(4, 29);
             this.qlThe.Name = "qlThe";
@@ -380,15 +438,22 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "QUẢN LÝ THẺ ĐA NĂNG";
             // 
-            // dataGridView3
+            // dgvThe
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(57, 105);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(733, 222);
-            this.dataGridView3.TabIndex = 0;
+            this.dgvThe.AutoGenerateColumns = false;
+            this.dgvThe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvThe.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn2,
+            this.iDCardDataGridViewTextBoxColumn,
+            this.dateCreatedDataGridViewTextBoxColumn,
+            this.pINCodeDataGridViewTextBoxColumn});
+            this.dgvThe.DataSource = this.cardBindingSource;
+            this.dgvThe.Location = new System.Drawing.Point(57, 105);
+            this.dgvThe.Name = "dgvThe";
+            this.dgvThe.RowHeadersWidth = 51;
+            this.dgvThe.RowTemplate.Height = 24;
+            this.dgvThe.Size = new System.Drawing.Size(733, 222);
+            this.dgvThe.TabIndex = 0;
             // 
             // btnThoat
             // 
@@ -400,18 +465,161 @@
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // btnSuaTaiKhoan
+            // accountBindingSource
             // 
-            this.btnSuaTaiKhoan.BackColor = System.Drawing.Color.DimGray;
-            this.btnSuaTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSuaTaiKhoan.ForeColor = System.Drawing.Color.White;
-            this.btnSuaTaiKhoan.Location = new System.Drawing.Point(299, 22);
-            this.btnSuaTaiKhoan.Name = "btnSuaTaiKhoan";
-            this.btnSuaTaiKhoan.Size = new System.Drawing.Size(139, 37);
-            this.btnSuaTaiKhoan.TabIndex = 6;
-            this.btnSuaTaiKhoan.Text = "Sửa";
-            this.btnSuaTaiKhoan.UseVisualStyleBackColor = false;
-            this.btnSuaTaiKhoan.Click += new System.EventHandler(this.btnSuaTaiKhoan_Click);
+            this.accountBindingSource.DataSource = typeof(MultiCardSystem.Data.Entities.Account);
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // iDAccountDataGridViewTextBoxColumn
+            // 
+            this.iDAccountDataGridViewTextBoxColumn.DataPropertyName = "IDAccount";
+            this.iDAccountDataGridViewTextBoxColumn.HeaderText = "IDAccount";
+            this.iDAccountDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.iDAccountDataGridViewTextBoxColumn.Name = "iDAccountDataGridViewTextBoxColumn";
+            this.iDAccountDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // userNameDataGridViewTextBoxColumn
+            // 
+            this.userNameDataGridViewTextBoxColumn.DataPropertyName = "UserName";
+            this.userNameDataGridViewTextBoxColumn.HeaderText = "UserName";
+            this.userNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
+            this.userNameDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // passWordDataGridViewTextBoxColumn
+            // 
+            this.passWordDataGridViewTextBoxColumn.DataPropertyName = "PassWord";
+            this.passWordDataGridViewTextBoxColumn.HeaderText = "PassWord";
+            this.passWordDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.passWordDataGridViewTextBoxColumn.Name = "passWordDataGridViewTextBoxColumn";
+            this.passWordDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // moneyDataGridViewTextBoxColumn
+            // 
+            this.moneyDataGridViewTextBoxColumn.DataPropertyName = "Money";
+            this.moneyDataGridViewTextBoxColumn.HeaderText = "Money";
+            this.moneyDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.moneyDataGridViewTextBoxColumn.Name = "moneyDataGridViewTextBoxColumn";
+            this.moneyDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // statusDataGridViewTextBoxColumn
+            // 
+            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
+            this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
+            this.statusDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
+            this.statusDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // roleNameDataGridViewTextBoxColumn
+            // 
+            this.roleNameDataGridViewTextBoxColumn.DataPropertyName = "RoleName";
+            this.roleNameDataGridViewTextBoxColumn.HeaderText = "RoleName";
+            this.roleNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.roleNameDataGridViewTextBoxColumn.Name = "roleNameDataGridViewTextBoxColumn";
+            this.roleNameDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // customerBindingSource
+            // 
+            this.customerBindingSource.DataSource = typeof(MultiCardSystem.Data.Entities.Customer);
+            // 
+            // iDDataGridViewTextBoxColumn1
+            // 
+            this.iDDataGridViewTextBoxColumn1.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.iDDataGridViewTextBoxColumn1.Name = "iDDataGridViewTextBoxColumn1";
+            this.iDDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // firstNameDataGridViewTextBoxColumn
+            // 
+            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+            this.firstNameDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // lastNameDataGridViewTextBoxColumn
+            // 
+            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
+            this.lastNameDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // dobDataGridViewTextBoxColumn
+            // 
+            this.dobDataGridViewTextBoxColumn.DataPropertyName = "Dob";
+            this.dobDataGridViewTextBoxColumn.HeaderText = "Dob";
+            this.dobDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dobDataGridViewTextBoxColumn.Name = "dobDataGridViewTextBoxColumn";
+            this.dobDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // cMNDDataGridViewTextBoxColumn
+            // 
+            this.cMNDDataGridViewTextBoxColumn.DataPropertyName = "CMND";
+            this.cMNDDataGridViewTextBoxColumn.HeaderText = "CMND";
+            this.cMNDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.cMNDDataGridViewTextBoxColumn.Name = "cMNDDataGridViewTextBoxColumn";
+            this.cMNDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // phoneNumberDataGridViewTextBoxColumn
+            // 
+            this.phoneNumberDataGridViewTextBoxColumn.DataPropertyName = "PhoneNumber";
+            this.phoneNumberDataGridViewTextBoxColumn.HeaderText = "PhoneNumber";
+            this.phoneNumberDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.phoneNumberDataGridViewTextBoxColumn.Name = "phoneNumberDataGridViewTextBoxColumn";
+            this.phoneNumberDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
+            this.addressDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            this.addressDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // cardBindingSource
+            // 
+            this.cardBindingSource.DataSource = typeof(MultiCardSystem.Data.Entities.Card);
+            // 
+            // iDDataGridViewTextBoxColumn2
+            // 
+            this.iDDataGridViewTextBoxColumn2.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn2.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.iDDataGridViewTextBoxColumn2.Name = "iDDataGridViewTextBoxColumn2";
+            this.iDDataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // iDCardDataGridViewTextBoxColumn
+            // 
+            this.iDCardDataGridViewTextBoxColumn.DataPropertyName = "IDCard";
+            this.iDCardDataGridViewTextBoxColumn.HeaderText = "IDCard";
+            this.iDCardDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.iDCardDataGridViewTextBoxColumn.Name = "iDCardDataGridViewTextBoxColumn";
+            this.iDCardDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // dateCreatedDataGridViewTextBoxColumn
+            // 
+            this.dateCreatedDataGridViewTextBoxColumn.DataPropertyName = "DateCreated";
+            this.dateCreatedDataGridViewTextBoxColumn.HeaderText = "DateCreated";
+            this.dateCreatedDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dateCreatedDataGridViewTextBoxColumn.Name = "dateCreatedDataGridViewTextBoxColumn";
+            this.dateCreatedDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // pINCodeDataGridViewTextBoxColumn
+            // 
+            this.pINCodeDataGridViewTextBoxColumn.DataPropertyName = "PINCode";
+            this.pINCodeDataGridViewTextBoxColumn.HeaderText = "PINCode";
+            this.pINCodeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.pINCodeDataGridViewTextBoxColumn.Name = "pINCodeDataGridViewTextBoxColumn";
+            this.pINCodeDataGridViewTextBoxColumn.Width = 125;
             // 
             // QuanLyScreen
             // 
@@ -426,25 +634,29 @@
             this.Name = "QuanLyScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý";
+            this.Load += new System.EventHandler(this.QuanLyScreen_Load);
             this.tcQuanLy.ResumeLayout(false);
             this.qlTaiKhoan.ResumeLayout(false);
             this.qlTaiKhoan.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTaiKhoan)).EndInit();
             this.qlKhachHang.ResumeLayout(false);
             this.qlKhachHang.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
             this.qlThe.ResumeLayout(false);
             this.qlThe.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvThe)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accountBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -452,7 +664,7 @@
         #endregion
 
         private System.Windows.Forms.TabControl tcQuanLy;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvKhachHang;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnXoaKhachHang;
         private System.Windows.Forms.Button btnSuaKhachHang;
@@ -469,7 +681,7 @@
         private System.Windows.Forms.Button btnXoaTaiKhoan;
         private System.Windows.Forms.Button btnThemTaiKhoan;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgvTaiKhoan;
         private System.Windows.Forms.TabPage qlThe;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.TextBox textBox3;
@@ -478,9 +690,30 @@
         private System.Windows.Forms.Button btnXoaThe;
         private System.Windows.Forms.Button btnThemThe;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView dgvThe;
         private System.Windows.Forms.TabPage qlKhachHang;
         private System.Windows.Forms.TabPage btnThoat;
         private System.Windows.Forms.Button btnSuaTaiKhoan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDAccountDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn passWordDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn moneyDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn roleNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource accountBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dobDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cMNDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phoneNumberDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource customerBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDCardDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateCreatedDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pINCodeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource cardBindingSource;
     }
 }

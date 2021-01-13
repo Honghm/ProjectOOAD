@@ -34,9 +34,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.txbID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.txbSoTaiKhoan = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txbTenTaiKhoan = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -53,13 +50,12 @@
             this.txbSoDu = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.txbGhiChu = new System.Windows.Forms.TextBox();
+            this.cbStatus = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnTao = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -94,15 +90,15 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(35, 99);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(131, 52);
+            this.panel2.Size = new System.Drawing.Size(372, 52);
             this.panel2.TabIndex = 1;
             // 
             // txbID
             // 
             this.txbID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbID.Location = new System.Drawing.Point(61, 14);
+            this.txbID.Location = new System.Drawing.Point(147, 17);
             this.txbID.Name = "txbID";
-            this.txbID.Size = new System.Drawing.Size(56, 26);
+            this.txbID.Size = new System.Drawing.Size(222, 26);
             this.txbID.TabIndex = 1;
             // 
             // label2
@@ -114,34 +110,6 @@
             this.label2.Size = new System.Drawing.Size(31, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "ID:";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Controls.Add(this.txbSoTaiKhoan);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(452, 99);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(372, 52);
-            this.panel3.TabIndex = 2;
-            // 
-            // txbSoTaiKhoan
-            // 
-            this.txbSoTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbSoTaiKhoan.Location = new System.Drawing.Point(141, 14);
-            this.txbSoTaiKhoan.Name = "txbSoTaiKhoan";
-            this.txbSoTaiKhoan.Size = new System.Drawing.Size(228, 26);
-            this.txbSoTaiKhoan.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(17, 17);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 20);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Số tài khoản:";
             // 
             // panel4
             // 
@@ -290,20 +258,24 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Transparent;
-            this.panel9.Controls.Add(this.txbGhiChu);
+            this.panel9.Controls.Add(this.cbStatus);
             this.panel9.Controls.Add(this.label9);
             this.panel9.Location = new System.Drawing.Point(449, 347);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(372, 52);
             this.panel9.TabIndex = 7;
             // 
-            // txbGhiChu
+            // cbStatus
             // 
-            this.txbGhiChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbGhiChu.Location = new System.Drawing.Point(147, 14);
-            this.txbGhiChu.Name = "txbGhiChu";
-            this.txbGhiChu.Size = new System.Drawing.Size(222, 26);
-            this.txbGhiChu.TabIndex = 1;
+            this.cbStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbStatus.FormattingEnabled = true;
+            this.cbStatus.Items.AddRange(new object[] {
+            "Active\t",
+            "Inactive"});
+            this.cbStatus.Location = new System.Drawing.Point(150, 9);
+            this.cbStatus.Name = "cbStatus";
+            this.cbStatus.Size = new System.Drawing.Size(222, 28);
+            this.cbStatus.TabIndex = 9;
             // 
             // label9
             // 
@@ -311,9 +283,9 @@
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(17, 17);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(72, 20);
+            this.label9.Size = new System.Drawing.Size(94, 20);
             this.label9.TabIndex = 0;
-            this.label9.Text = "Ghi chú:";
+            this.label9.Text = "Tình trạng :";
             // 
             // btnTao
             // 
@@ -326,6 +298,7 @@
             this.btnTao.TabIndex = 8;
             this.btnTao.Text = "Tạo";
             this.btnTao.UseVisualStyleBackColor = false;
+            this.btnTao.Click += new System.EventHandler(this.btnTao_Click);
             // 
             // btnThoat
             // 
@@ -355,7 +328,6 @@
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
@@ -367,8 +339,6 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -392,9 +362,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txbID;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox txbSoTaiKhoan;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox txbTenTaiKhoan;
         private System.Windows.Forms.Label label4;
@@ -411,9 +378,9 @@
         private System.Windows.Forms.TextBox txbSoDu;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox txbGhiChu;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnTao;
         private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.ComboBox cbStatus;
     }
 }

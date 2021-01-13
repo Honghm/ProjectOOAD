@@ -108,6 +108,7 @@
             this.txbMatKhau.Name = "txbMatKhau";
             this.txbMatKhau.Size = new System.Drawing.Size(220, 30);
             this.txbMatKhau.TabIndex = 2;
+            this.txbMatKhau.UseSystemPasswordChar = true;
             // 
             // lbMatKhau
             // 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MultiCardSystem.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,7 @@ namespace MultiCardSystem.Screen
         {
             InitializeComponent();
         }
+        private readonly AccountService _accountService = new AccountService();
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -35,18 +37,20 @@ namespace MultiCardSystem.Screen
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             this.Hide();
-            if (this.txbSoTaiKhoan.Text == "1")
+            if (_accountService.LoginUser(txbSoTaiKhoan.Text, txbMatKhau.Text))
             {
                 TrangChuScreen trangChu = new TrangChuScreen();
                 trangChu.ShowDialog();
             }
-            else
+            else if (_accountService.LoginAdmin(txbSoTaiKhoan.Text, txbMatKhau.Text))
             {
                 QuanLyScreen quanLy = new QuanLyScreen();
                 quanLy.ShowDialog();
             }
-            
-            
+            else
+            {
+                MessageBox.Show("dang nhap sai!");
+            }
             this.Show();
         }
 

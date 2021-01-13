@@ -57,42 +57,109 @@ C:\Users\HP\Desktop\Tài liệu HK1-2021\OOAD\Project\FinalProject\MultiCardSyst
 C:\Users\HP\Desktop\Tài liệu HK1-2021\OOAD\Project\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.exe
 C:\Users\HP\Desktop\Tài liệu HK1-2021\OOAD\Project\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.pdb
 C:\Users\HP\Desktop\Tài liệu HK1-2021\OOAD\Project\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Migrations.testdb.resources
-C:\Users\HP\Desktop\Tài liệu HK1-2021\OOAD\Project\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.csprojAssemblyReference.cache
 C:\Users\HP\Desktop\Tài liệu HK1-2021\OOAD\Project\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Migrations.testdb1.resources
 C:\Users\HP\Desktop\Tài liệu HK1-2021\OOAD\Project\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Migrations.testrelationship.resources
 C:\Users\HP\Desktop\Tài liệu HK1-2021\OOAD\Project\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Migrations.testrelationship1.resources
 C:\Users\HP\Desktop\Tài liệu HK1-2021\OOAD\Project\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Migrations.Completeddb01.resources
 C:\Users\HP\Desktop\Tài liệu HK1-2021\OOAD\Project\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Migrations.Testauthentication.resources
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.csprojAssemblyReference.cache
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Migrations.testdb.resources
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Migrations.testdb1.resources
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Migrations.testrelationship.resources
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Migrations.testrelationship1.resources
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Migrations.Completeddb01.resources
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Migrations.Testauthentication.resources
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Properties.Resources.resources
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.csproj.GenerateResource.cache
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.csproj.CoreCompileInputs.cache
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.exe
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.pdb
+C:\Users\HP\Desktop\Tài liệu HK1-2021\OOAD\Project\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Form1.resources
+C:\Users\HP\Desktop\Tài liệu HK1-2021\OOAD\Project\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\Tài liệu HK1-2021\OOAD\Project\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Migrations.DeleteRole.resources
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\MultiCardSystem.exe.config
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\MultiCardSystem.exe
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\MultiCardSystem.pdb
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\System.Buffers.dll
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\System.Collections.Immutable.dll
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\System.Memory.dll
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.EntityFrameworkCore.xml
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\System.Buffers.xml
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\System.Collections.Immutable.xml
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\System.Memory.xml
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Form1.resources
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Properties.Resources.resources
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.csproj.CopyComplete
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.exe
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.pdb
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.ChuyenTienScreen.resources
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.DoiMatMaScreen.resources
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.LoginScreen.resources
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.QuanLyScreen.resources
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.RutTienScreen.resources
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.RutTienSoKhac.resources
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.ThanhToanHoaDon2.resources
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.ThanhToanHoaDonScreen.resources
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.TrangChuScreen.resources
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.XacNhanMaPIN.resources
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Migrations.test.resources
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.SuaKhachHang.resources
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.SuaTaiKhoan.resources
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.ThemKhachHang.resources
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.ThemTaiKhoan.resources
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.ThemThe.resources
+C:\Users\HP\Desktop\New folder (2)\FinalProject\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.TraCuuSoDu.resources
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\MultiCardSystem.exe.config
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\MultiCardSystem.exe
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\MultiCardSystem.pdb
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\EntityFramework.SqlServer.dll
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\EntityFramework.dll
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\EntityFramework.SqlServer.dll
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Bcl.HashCode.dll
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.EntityFrameworkCore.dll
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.EntityFrameworkCore.dll
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Extensions.Configuration.dll
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Extensions.Configuration.dll
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Extensions.Logging.dll
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Extensions.Logging.dll
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Extensions.Options.dll
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Extensions.Primitives.dll
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\System.Buffers.dll
@@ -103,20 +170,52 @@ D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\System.Memory.dll
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\System.Numerics.Vectors.dll
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\System.Threading.Tasks.Extensions.dll
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.csproj.CopyComplete
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.LoginScreen.resources
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.TrangChuScreen.resources
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.RutTienScreen.resources
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\EntityFramework.xml
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\EntityFramework.SqlServer.xml
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Bcl.HashCode.xml
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.EntityFrameworkCore.xml
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Extensions.Configuration.xml
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Extensions.Logging.xml
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Extensions.Options.xml
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\System.Buffers.xml
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\System.Collections.Immutable.xml
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\System.Memory.xml
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\System.Numerics.Vectors.xml
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.csprojAssemblyReference.cache
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Form1.resources
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Migrations.test.resources
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Properties.Resources.resources
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.ChuyenTienScreen.resources
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.ThanhToanHoaDonScreen.resources
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.DoiMatMaScreen.resources
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.ThanhToanHoaDon2.resources
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.RutTienSoKhac.resources
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.XacNhanMaPIN.resources
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.LoginScreen.resources
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.QuanLyScreen.resources
-D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.TraCuuSoDu.resources
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.RutTienScreen.resources
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.RutTienSoKhac.resources
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.SuaKhachHang.resources
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.SuaTaiKhoan.resources
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.ThanhToanHoaDon2.resources
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.ThanhToanHoaDonScreen.resources
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.ThemKhachHang.resources
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.ThemTaiKhoan.resources
 D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.ThemThe.resources
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.TraCuuSoDu.resources
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.TrangChuScreen.resources
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.Screen.XacNhanMaPIN.resources
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.csproj.GenerateResource.cache
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.csproj.CoreCompileInputs.cache
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.csproj.CopyComplete
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.exe
+D:\My Code\OOAD\ProjectOOAD\MultiCardSystem\obj\Debug\MultiCardSystem.pdb

@@ -268,6 +268,7 @@
             this.btnTao.TabIndex = 19;
             this.btnTao.Text = "Tạo";
             this.btnTao.UseVisualStyleBackColor = false;
+            this.btnTao.Click += new System.EventHandler(this.btnTao_Click);
             // 
             // panel1
             // 

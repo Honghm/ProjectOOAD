@@ -15,7 +15,7 @@ namespace MultiCardSystem.Data.Entities
 
         public decimal TotalMoney { get; set; }
 
-        public int CurrentAccountID { get; set; }
+        public string CurrentAccountID { get; set; }
         public Account CurrentAccount { get; set; }
 
         public string CurrentSupplierID { get; set; }
