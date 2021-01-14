@@ -1,4 +1,5 @@
-﻿using MultiCardSystem.Services;
+﻿using MultiCardSystem.Data.Entities;
+using MultiCardSystem.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,13 +16,16 @@ namespace MultiCardSystem.Screen
     {
         string soTien;
         string ID;
-        
+        Account account;
+        Card card;
+        private readonly AccountService _accountService = new AccountService();
+        private readonly CardService _cardService = new CardService();
         public XacNhanMaPIN()
         {
             
             InitializeComponent();
         }
-        private readonly AccountService _accountService = new AccountService();
+      
         public XacNhanMaPIN(string soTien, string id)
         {
             InitializeComponent();
@@ -34,8 +38,10 @@ namespace MultiCardSystem.Screen
             this.Close();
         }
 
-        private void XacNhanMaPIN_Load(object sender, EventArgs e)
+        private async void XacNhanMaPIN_Load(object sender, EventArgs e)
         {
+            account = await _accountService.GetAccountByID(ID);
+            card = await _cardService.GetCardById(ID);
             this.lbSoTien.Text = this.soTien + " VNĐ";
         }
 
@@ -49,7 +55,21 @@ namespace MultiCardSystem.Screen
             bool result = await _accountService.RutTien(ID, txbPINCode.Text, decimal.Parse(soTien));
 
             if (result == true)
-                MessageBox.Show("Bạn đã rút " + soTien+" VND", "THÔNG BÁO");
+            {
+                if (MessageBox.Show("Bạn đã rút " + soTien + " VND.\n Bạn có muốn in hóa đơn không?", "THÔNG BÁO",MessageBoxButtons.YesNo)!=DialogResult.No)
+                {
+                    this.Hide();
+                    InHoaDon hoaDon = new InHoaDon("RÚT TIỀN",
+                        card.IDCard, account.IDAccount,
+                        "Rút tiền",
+                        DateTime.Now.ToString(),
+                       soTien
+                        );
+                    hoaDon.ShowDialog();
+                    this.Show();
+                }    
+               
+            }
             else
                 MessageBox.Show("Rút tiền không thành công", "THÔNG BÁO");
             this.Close(); 

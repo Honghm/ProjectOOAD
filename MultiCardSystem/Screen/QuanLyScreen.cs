@@ -72,9 +72,9 @@ namespace MultiCardSystem.Screen
             this.Hide();
             ThemTaiKhoan them = new ThemTaiKhoan();
             them.ShowDialog();
-            this.Controls.Clear();
-            this.InitializeComponent();
-            dgvTaiKhoan.DataSource = _accountService.GetAllAccounts();
+            //this.Controls.Clear();
+            //this.InitializeComponent();
+            //dgvTaiKhoan.DataSource = _accountService.GetAllAccounts();
             this.Show();
         }
 
@@ -98,9 +98,9 @@ namespace MultiCardSystem.Screen
             this.Hide();
             ThemKhachHang them = new ThemKhachHang();
             them.ShowDialog();
-            this.Controls.Clear();
-            this.InitializeComponent();
-            dgvKhachHang.DataSource = _customerService.GetAllCustomers();
+            //this.Controls.Clear();
+            //this.InitializeComponent();
+            //dgvKhachHang.DataSource = _customerService.GetAllCustomers();
             this.Show();
         }
 
@@ -111,9 +111,9 @@ namespace MultiCardSystem.Screen
                 this.Hide();
                 SuaKhachHang them = new SuaKhachHang(ID);
                 them.ShowDialog();
-                this.Controls.Clear();
-                this.InitializeComponent();
-                dgvKhachHang.DataSource = _customerService.GetAllCustomers();
+                //this.Controls.Clear();
+                //this.InitializeComponent();
+                //dgvKhachHang.DataSource = _customerService.GetAllCustomers();
                 this.Show();
             }    
          
@@ -124,9 +124,9 @@ namespace MultiCardSystem.Screen
             this.Hide();
             ThemThe them = new ThemThe();
             them.ShowDialog();
-            this.Controls.Clear();
-            this.InitializeComponent();
-            dgvThe.DataSource = _cardService.GetAllCards();
+            //this.Controls.Clear();
+            //this.InitializeComponent();
+            //dgvThe.DataSource = _cardService.GetAllCards();
             this.Show();
         }
 

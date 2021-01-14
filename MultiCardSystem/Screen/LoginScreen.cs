@@ -20,20 +20,6 @@ namespace MultiCardSystem.Screen
         }
         private readonly AccountService _accountService = new AccountService();
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void picbLogin_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
@@ -76,31 +62,7 @@ namespace MultiCardSystem.Screen
             this.Show();
         }
 
-        private void LoginScreen_FormClosing(object sender, FormClosingEventArgs e)
-        {
-           
-        }
-
-        private void LoginScreen_KeyDown(object sender, KeyEventArgs e)
-        {
-          
-        }
-
-        private void LoginScreen_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            //if (e.KeyChar == 13)
-            //{
-            //    btnDangNhap.PerformClick();
-            //}
-        }
-
-        private void btnDangNhap_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            //if(e.KeyChar == 13)
-            //{
-            //    btnDangNhap.PerformClick();
-            //}
-        }
+      
 
         private void txbMatKhau_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -109,5 +71,6 @@ namespace MultiCardSystem.Screen
                 btnDangNhap.PerformClick();
             }
         }
+
     }
 }

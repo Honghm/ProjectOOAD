@@ -57,6 +57,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(367, 484);
             this.panel2.TabIndex = 1;
+           
             // 
             // panel3
             // 
@@ -81,7 +82,7 @@
             this.btnDangNhap.Text = "ĐĂNG NHẬP";
             this.btnDangNhap.UseVisualStyleBackColor = false;
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
-            this.btnDangNhap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btnDangNhap_KeyPress);
+          
             // 
             // lbDangNhap
             // 
@@ -170,7 +171,7 @@
             this.picbLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picbLogin.TabIndex = 2;
             this.picbLogin.TabStop = false;
-            this.picbLogin.Click += new System.EventHandler(this.picbLogin_Click);
+           
             // 
             // LoginScreen
             // 
@@ -186,9 +187,7 @@
             this.Name = "LoginScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoginScreen_FormClosing);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.LoginScreen_KeyDown);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.LoginScreen_KeyPress);
+          
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

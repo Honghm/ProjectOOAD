@@ -36,7 +36,7 @@ namespace MultiCardSystem.Screen
         {
             
             this.Hide();
-            ThanhToanHoaDon2 thanhToan = new ThanhToanHoaDon2(txbMaHoaDon.Text);
+            ThanhToanHoaDon2 thanhToan = new ThanhToanHoaDon2(ID, txbMaHoaDon.Text);
             thanhToan.ShowDialog();
             this.Show();
         }

@@ -178,6 +178,12 @@
     <Compile Include="Screen\DoiMatMaScreen.Designer.cs">
       <DependentUpon>DoiMatMaScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screen\InHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\InHoaDon.Designer.cs">
+      <DependentUpon>InHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screen\LoginScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -291,6 +297,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Screen\DoiMatMaScreen.resx">
       <DependentUpon>DoiMatMaScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screen\InHoaDon.resx">
+      <DependentUpon>InHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screen\LoginScreen.resx">
       <DependentUpon>LoginScreen.cs</DependentUpon>
